@@ -1,5 +1,5 @@
 package com.teamsmartworld;
-import java.util.Random;
+
 import java.util.Scanner;
 
 public class Exercises {
@@ -12,7 +12,7 @@ public class Exercises {
      * Exercise One
      * Exercise 1: A Program that prints "Hello" on the first line and my name on the next line
      */
-    public static void printHello(String[] args) {
+    public static void printHello() {
         System.out.println("Hello");
         System.out.println("Dave");
     }
@@ -24,9 +24,11 @@ public class Exercises {
      * year or not.
      */
 
-    public static void checkLeapYear(String[] args) {
+    public static void checkLeapYear() {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Please enter a year: ");
+
+        int year = scanner.nextInt();
         //User enters the year then we check
 
         if ((year % 4 == 0 && year % 100 !=0) ||(year % 400 ==0)) {
@@ -40,11 +42,22 @@ public class Exercises {
      * A Java Program that prints the sum, multiplication, division, and subtraction of two numbers.
      */
 
-    public static void basicMaths(String[] args) {
-
+    public static void basicCalculation() {
+        System.out.println("40 + 25 = " + (40 + 25));
+        System.out.println("94 * 6 = " + (94 * 6));
+        System.out.println("64 / 12 = " + (64 / 12));
+        System.out.println("86 - 56 = " + (86 - 56));
     }
 
-    }
+    /**
+     * Exercise Four:
+     * A Java program that checks the average of three numbers
+     */
+    public static void simpleAverage() {
+        int number1 = 36, number2 = 23, number3 = 64;
+        double average = (number1 + number2 + number3) /3.0;
+        System.out.println("The average of " + "(" +number1 + "+" + number2 + "+" +number3 + ") /3 is" + average);
 
+    }
 
 }
