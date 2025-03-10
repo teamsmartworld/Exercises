@@ -60,4 +60,43 @@ public class Exercises {
 
     }
 
+    /**
+     * Exercise Five
+     * Creating a Program to say Hello to the user who inputs a name.
+     */
+
+    public static void greetUser() {
+
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Please Enter Your Name :");
+        String name = scanner.nextLine();
+
+        System.out.print("Hello " + name);
+
+        scanner.close();
+
+    }
+
+    /**
+     * This sample exercise calculates the sum
+     * (as well as the subtraction, multiplication and division)
+     * of two numbers as inputs from the user.
+     */
+
+    public static void simpleArithmetics() {
+
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Please suggest a number: ");
+        int numberOne = scanner.nextInt();
+
+        System.out.println("Please suggest another number: ");
+        int numberTwo = scanner.nextInt();
+
+        System.out.println("The sum of your numbers is: " + numberOne + numberTwo);
+
+    }
+
+
 }
