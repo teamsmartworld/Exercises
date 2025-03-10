@@ -98,5 +98,28 @@ public class Exercises {
 
     }
 
+    /**
+     * This exercise converts seconds into hours, minutes and seconds
+     */
+
+    public static void timConversion() {
+
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Please enter the seconds: ");
+        int seconds = scanner.nextInt();
+
+        int inSeconds = seconds % 60;  // Calculates divides the seconds by 60 and renders the remaining seconds
+        int inHours = seconds / 60;  // This directly calculates the seconds to minutes by dividing by 60.
+        int inMinutes = inHours % 60;         // Renders the rest of the remaining minutes
+        inHours = inHours / 60;            // This Converts total minutes into hours
+
+        //We now display the time as a concatenation of the above as follows:
+
+        System.out.print(inHours + ":" + inMinutes + ":" + inSeconds);
+
+
+    }
+
 
 }
